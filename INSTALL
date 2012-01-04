@@ -1,0 +1,37 @@
+Step 0:  Install prerequisite libraries
+  http://code.google.com/p/google-gflags/
+  http://code.google.com/p/google-glog/
+  http://code.google.com/p/protobuf/
+For each library, checkout (or download and expand) the source, then build and install.
+If you have root on your machine:
+  ./configure
+  make
+  sudo make install
+If you don't have root on your machine, you can install the libraries to a local directory instead:
+  ./configure --prefix=<my_directory>
+  make
+  make install
+
+
+Step 1:  Configure Autotools
+  autoreconf --force --install --verbose
+  ./configure
+If you used --prefix above to install the prerequisite libraries somewhere unusual, add paths to LDFLAGS and CPPFLAGS accordingly before running ./configure.  For example:
+  LDFLAGS="$LDFLAGS -L<my_directory>/lib" CPPFLAGS="$CPPFLAGS -I<my_directory>/include" ./configure
+
+
+Step 2:  Build HOpS
+  make hops
+Alternately:  Build HOpS and run unittests
+  make check
+
+
+Step 3:  Run HOpS (example)
+  ./hops --logtostderr \
+    --layout_file=src/examples/two_heliostats_layout \
+    --start_time=0 --end_time=1 --receiver_flux=rf
+
+
+Step 4:  Plot results (example)
+  src/plot_results.sh rf
+  {display,open} rf_0.png rf_1.png
