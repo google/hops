@@ -14,8 +14,8 @@
 // Author: tpw@google.com (Tamsyn Waterhouse)
 // TODO(tpw): unittests!
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "src/optic_container.h"
 
 #include "src/optic.h"  // for Optic

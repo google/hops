@@ -13,8 +13,8 @@
 //
 // Author: tpw@google.com (Tamsyn Waterhouse)
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "math/coordinates3d.h"
 
 #include <cstddef>                       // for NULL

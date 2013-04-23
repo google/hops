@@ -48,7 +48,7 @@ hops_SOURCES = \
   src/sun_calculators.cc
 
 hops_CXXFLAGS = -DNDEBUG  # disable DCHECK in the binary
-hops_LDFLAGS = -lgflags -lglog -lprotobuf
+hops_LDADD = -lgflags -lglog -lprotobuf
 
 
 # The unittests:
@@ -59,7 +59,7 @@ coordinates_test_SOURCES = \
   gtest/src/gtest_main.cc
 
 coordinates_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-coordinates_test_LDFLAGS = -lgflags -lglog -lprotobuf
+coordinates_test_LDADD = -lgflags -lglog -lprotobuf
 
 coordinates2d_test_SOURCES = \
   math/coordinates2d_test.cc \
@@ -68,7 +68,7 @@ coordinates2d_test_SOURCES = \
   math/coordinates2d.cc
 
 coordinates2d_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-coordinates2d_test_LDFLAGS = -lgflags -lglog -lprotobuf
+coordinates2d_test_LDADD = -lgflags -lglog -lprotobuf
 
 coordinates3d_test_SOURCES = \
   math/coordinates3d_test.cc \
@@ -78,7 +78,7 @@ coordinates3d_test_SOURCES = \
   math/quaternion.cc
 
 coordinates3d_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-coordinates3d_test_LDFLAGS = -lgflags -lglog -lprotobuf
+coordinates3d_test_LDADD = -lgflags -lglog -lprotobuf
 
 polygons_test_SOURCES = \
   math/polygons_test.cc \
@@ -88,7 +88,7 @@ polygons_test_SOURCES = \
   math/polygons.cc
 
 polygons_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-polygons_test_LDFLAGS = -lgflags -lglog -lprotobuf
+polygons_test_LDADD = -lgflags -lglog -lprotobuf
 
 quaternion_test_SOURCES = \
   math/quaternion_test.cc \
@@ -97,7 +97,7 @@ quaternion_test_SOURCES = \
   math/quaternion.cc
 
 quaternion_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-quaternion_test_LDFLAGS = -lgflags -lglog -lprotobuf
+quaternion_test_LDADD = -lgflags -lglog -lprotobuf
 
 aperture_test_SOURCES = \
   src/aperture_test.cc \
@@ -112,7 +112,7 @@ aperture_test_SOURCES = \
   math/polygons.cc
 
 aperture_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-aperture_test_LDFLAGS = -lgflags -lglog -lprotobuf
+aperture_test_LDADD = -lgflags -lglog -lprotobuf
 
 heliostat_actuation_test_SOURCES = \
   src/heliostat_actuation_test.cc \
@@ -126,7 +126,7 @@ heliostat_actuation_test_SOURCES = \
   math/quaternion.cc
 
 heliostat_actuation_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-heliostat_actuation_test_LDFLAGS = -lgflags -lglog -lprotobuf
+heliostat_actuation_test_LDADD = -lgflags -lglog -lprotobuf
 
 heliostat_test_SOURCES = \
   src/heliostat_test.cc \
@@ -142,6 +142,6 @@ heliostat_test_SOURCES = \
   math/polygons.cc
 
 heliostat_test_CXXFLAGS = -I$(top_srcdir)/gtest/include -I$(top_srcdir)/gtest
-heliostat_test_LDFLAGS = -lgflags -lglog -lprotobuf
+heliostat_test_LDADD = -lgflags -lglog -lprotobuf
 
 noinst_PROGRAMS = $(TESTS)

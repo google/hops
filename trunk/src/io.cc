@@ -13,8 +13,8 @@
 //
 // Author: tpw@google.com (Tamsyn Waterhouse)
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "src/io.h"
 
 #include <glog/logging.h>

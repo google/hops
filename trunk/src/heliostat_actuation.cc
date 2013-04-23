@@ -13,8 +13,8 @@
 //
 // Author: tpw@google.com (Tamsyn Waterhouse)
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "src/heliostat_actuation.h"
 
 #include <cmath>                        // for M_PI

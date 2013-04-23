@@ -85,8 +85,8 @@
 *                               (changed sign). Error is small (max 0.015 deg
 *                               in calculation of declination angle)
 *----------------------------------------------------------------------------*/
-using namespace std;
 #include "config.h"
+using namespace std;
 #include <math.h>
 #include <string.h>
 #include <stdio.h>

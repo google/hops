@@ -13,8 +13,8 @@
 //
 // Author: tpw@google.com (Tamsyn Waterhouse)
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "math/coordinates2d.h"
 
 #include <cmath>                       // for atan2, cos, sin, sqrt
