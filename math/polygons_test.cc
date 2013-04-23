@@ -98,8 +98,8 @@
 // cut_square_2 is square with the lower-right quarter removed, and
 // pierced_octagon is octagon with hexagon_one and hexagon_two removed.
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "math/polygons.h"
 
 #include <cmath>                         // for sqrt, M_PI

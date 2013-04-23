@@ -16,8 +16,8 @@
 // optical flux from a heliostat field to a receiver cavity.
 // TODO(tpw):  Regression test!
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include <ctime>
 #include <cstdlib>
 

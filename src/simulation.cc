@@ -14,8 +14,8 @@
 // Author: tpw@google.com (Tamsyn Waterhouse)
 // TODO(tpw):  Unittests!
 
-using namespace std;
 #include "config.h"
+using namespace std;
 #include "src/simulation.h"
 
 #include <algorithm>                    // for sort
